@@ -8,10 +8,11 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    
-        - run: echo "etapes1 - initialisation"
-       - run: echo "etapes2 - Recuperation du code "
-      - run: echo "etapes3 - Bluid"
-       - run: echo "etapes4 - Tests"
-       - run: echo "etapes5 - Packaging"
-       - run: echo "etapes6 - Fin du pipeline "
+    steps:
+      - run: echo "etape1 - initialisation"
+      - run: echo "etape2 - Recuperation du code"
+      - run: echo "etape3 - Build"
+      - run: echo "etape4 - Tests"
+      - run: echo "etape5 - Packaging"
+      - run: echo "etape6 - Fin du pipeline"
+
