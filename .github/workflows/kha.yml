@@ -6,13 +6,32 @@ on:
       - main
 
 jobs:
-  deploy:
+  etape1:
     runs-on: ubuntu-latest
     steps:
       - run: echo "etape1 - initialisation"
-      - run: echo "etape2 - Recuperation du code"
-      - run: echo "etape3 - Build"
-      - run: echo "etape4 - Tests"
-      - run: echo "etape5 - Packaging"
-      - run: echo "etape6 - Fin du pipeline"
 
+  etape2:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "etape2 - Recuperation du code"
+
+  etape3:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "etape3 - Build"
+
+  etape4:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "etape4 - Tests"
+
+  etape5:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "etape5 - Packaging"
+
+  etape6:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "etape6 - Fin du pipeline"
