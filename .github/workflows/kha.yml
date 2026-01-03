@@ -1,0 +1,17 @@
+name: Deploy Application
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+        - run: echo "etapes1 - initialisation"
+       - run: echo "etapes2 - Recuperation du code "
+      - run: echo "etapes3 - Bluid"
+       - run: echo "etapes4 - Tests"
+       - run: echo "etapes5 - Packaging"
+       - run: echo "etapes6 - Fin du pipeline "
